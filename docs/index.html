@@ -73,10 +73,22 @@
       text-align: center;
       padding: 4rem 2rem;
     }
-    .screenshots h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: var(--dark);
+    .screenshot-strip {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;
+      justify-content: center;
+    }
+    .screenshot-strip img {
+      height: 420px;
+      width: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      scroll-snap-align: start;
+      flex-shrink: 0;
     }
 
     /* Bottom CTA */
@@ -112,7 +124,7 @@
   <section class="hero">
     <h1>PetDNS</h1>
     <p>PetDNS is an easy to use third-party management app for NextDNS, built with power users in mind.</p>
-    <a href="#" class="btn">Coming Soon</a>
+    <a href="#" class="btn">Download Coming Soon!</a>
   </section>
 
   <!-- DISCLAIMER -->
@@ -123,23 +135,28 @@
   <!-- ABOUT -->
   <section class="about">
     <h2>About PetDNS</h2>
-    <p>PetDNS gives you full control over your NextDNS account directly from your iPhone. View your DNS query logs, manage your allowlist and blocklist, and toggle settings — all without opening a browser. Built for power users who want a native, fast experience.</p>
+    <p>PetDNS gives you full control over your NextDNS account directly from your iPhone. View your DNS query logs, manage your allowlist and denylist, and toggle settings without opening a browser. Built for power users who want a native, fast experience.</p>
   </section>
 
   <!-- SCREENSHOTS -->
   <section class="screenshots">
-    <h2>Screenshots</h2>
-    <p>Screenshots coming soon.</p>
+    <div class="screenshot-strip">
+      <img src="assets/images/01.png" alt="PetDNS dashboard overview">
+      <img src="assets/images/02.png" alt="PetDNS analytics overview">
+      <img src="assets/images/03.png" alt="PetDNS log overview">
+      <img src="assets/images/04.png" alt="PetDNS log detail view">
+      <img src="assets/images/05.png" alt="PetDNS profile settings overview">
+    </div>
   </section>
 
   <!-- BOTTOM CTA -->
   <section class="cta">
-    <h2>Download PetDNS</h2>
-    <a href="#" class="btn btn-blue">Coming Soon</a>
+    <h2>Download on the App Store</h2>
+    <a href="#" class="btn btn-blue">Download Coming Soon!</a>
   </section>
 
   <footer>
-    <p>PetDNS is not affiliated with or endorsed by NextDNS. &nbsp;|&nbsp;
+    <p>PetDNS is not affiliated with or endorsed by NextDNS. All trademarks are the property of their respective owners.
     <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 
