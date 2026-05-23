@@ -4,15 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetDNS</title>
+  <title>PetDNS — NextDNS Management for iOS</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+
+  <!-- SEO -->
+  <meta name="description" content="PetDNS is a native iOS app for managing your NextDNS profiles. View DNS query logs, manage allow and denylists, and automate profile management with Siri and Shortcuts.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PetDNS — NextDNS Management for iOS">
+  <meta property="og:description" content="Native iOS app for managing your NextDNS profiles. View logs, manage blocklists, and automate with Siri and Shortcuts.">
+  <meta property="og:url" content="https://luke-dev26.github.io/PetDNS/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://luke-dev26.github.io/PetDNS/assets/images/01.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PetDNS",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "A native iOS app for managing NextDNS profiles. View DNS query logs, manage allow and denylists, and automate profile management with Siri and Shortcuts.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://luke-dev26.github.io/PetDNS/"
+  }
+  </script>
   <style>
     /* Hero */
     .hero {
-      background-color: var(--blue);
+      background: linear-gradient(150deg, var(--blue-light) 0%, var(--blue) 100%);
       color: var(--white);
       text-align: center;
       padding: 5rem 2rem;
+    }
+    .hero-icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     }
     .hero h1 {
       font-size: 3rem;
@@ -58,6 +99,25 @@
       line-height: 1.75;
     }
 
+    /* Promise */
+    .promise {
+      background: var(--dark);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .promise h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    .promise p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.88);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     /* Screenshots */
     .screenshots {
       background: var(--light-bg);
@@ -72,6 +132,7 @@
       -webkit-overflow-scrolling: touch;
       padding-bottom: 1rem;
       justify-content: center;
+      margin-top: 1.5rem;
     }
     .screenshot-strip img {
       height: 420px;
@@ -106,14 +167,20 @@
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="shortcuts.html">iOS Shortcuts</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="https://github.com/luke-dev26/PetDNS/issues" target="_blank">Submit Feedback</a>
+    <a href="index.html" class="nav-brand">
+      <img src="assets/PetDNS-Default.png" alt="PetDNS" class="nav-logo">
+      PetDNS
+    </a>
+    <div class="nav-links">
+      <a href="shortcuts.html">iOS Shortcuts</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/luke-dev26/PetDNS/issues" target="_blank">Submit Feedback</a>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
+    <img src="assets/PetDNS-Default.png" alt="PetDNS" class="hero-icon">
     <h1>PetDNS</h1>
     <p>NextDNS profile management built for iOS: native, fast, and automated.</p>
     <a href="#" class="btn">Download Coming Soon</a>
@@ -126,7 +193,7 @@
   </section>
 
   <!-- PROMISE -->
-  <section class="about">
+  <section class="promise">
     <h2>The PetDNS Promise</h2>
     <p>PetDNS promises to provide all services and features available on the NextDNS website, including data retrieval, viewing logs, and managing settings for all of your individual profiles, in the app at no cost. The app's subscription unlocks what goes beyond the website: multi-profile views, cross-profile log search, and automation with Siri and Shortcuts.</p>
   </section>
@@ -134,7 +201,6 @@
   <!-- SCREENSHOTS -->
   <section class="screenshots">
     <h3>App Preview</h3>
-    <br>
     <div class="screenshot-strip">
       <img src="assets/images/01.png" alt="PetDNS dashboard overview">
       <img src="assets/images/02.png" alt="PetDNS analytics overview">
