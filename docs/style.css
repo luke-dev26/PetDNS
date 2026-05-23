@@ -73,6 +73,71 @@ nav a:hover {
     opacity: 0.8;
 }
 
+/* Hamburger button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+nav.nav-open .nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+nav.nav-open .nav-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+nav.nav-open .nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.75rem 0 0.25rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        margin-top: 0.75rem;
+    }
+
+    .nav-links a {
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    nav.nav-open .nav-links {
+        display: flex;
+    }
+}
+
 footer {
     background: var(--dark);
     color: var(--white);

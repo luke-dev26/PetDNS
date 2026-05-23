@@ -1,0 +1,15 @@
+# PetDNS
+
+> PetDNS is a native iOS app for managing NextDNS profiles. It is a third-party client and is not affiliated with or endorsed by NextDNS.
+
+PetDNS provides a fully native iPhone and iPad interface for NextDNS, a DNS-based filtering service that blocks advertisements, trackers, and threats. The app allows users to view DNS query logs, manage allow and denylists, and adjust advanced profile settings entirely from their device.
+
+PetDNS is free to use for all features available on the NextDNS website. A paid subscription unlocks features that go beyond the website: multi-profile views, cross-profile log search, and automation via Siri and the iOS Shortcuts app.
+
+The app stores the user's NextDNS API key exclusively on-device using Apple's secure storage. No personal data is collected, transmitted, or stored by the app's developer. All NextDNS account data is fetched directly from the NextDNS API on the user's device.
+
+## Pages
+
+- [Home](https://luke-dev26.github.io/PetDNS/): App overview, features, and App Store download link.
+- [iOS Shortcuts](https://luke-dev26.github.io/PetDNS/shortcuts.html): A gallery of ready-made Siri and iOS Shortcuts for use with PetDNS, including Share Sheet integration, connection checking, and Apple Intelligence-powered profile summaries.
+- [Privacy Policy](https://luke-dev26.github.io/PetDNS/privacy.html): Full privacy policy. PetDNS collects no personal data.
