@@ -147,18 +147,17 @@
       text-align: center;
       padding: 4rem 2rem;
     }
-    .cta h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--dark);
+    .cta-app-store-btn {
+      display: inline-block;
+      transition: opacity 0.15s;
     }
-    .btn-blue {
-      background: var(--blue);
-      color: var(--white);
+    .cta-app-store-btn:hover {
+      opacity: 0.8;
     }
-    .btn-blue:hover {
-      opacity: 0.85;
-      color: var(--white);
+    .cta-app-store-btn img {
+      height: 54px;
+      width: auto;
+      display: block;
     }
   </style>
 </head>
@@ -192,7 +191,10 @@
   <!-- ABOUT -->
   <section class="about">
     <h2>About the App</h2>
-    <p>PetDNS gives you full control over your NextDNS profiles directly from your iPhone or iPad. View your DNS query logs, manage your denylist and allowlist, and adjust advanced settings all from a fully native app!</p>
+    <p>PetDNS gives you full control over your NextDNS profiles directly from your iPhone or iPad. Do a deep dive on your DNS
+    query logs, manage your denylist and allowlist, investigate query analytics, and adjust advanced settings all from a
+    fully native app! Get at a glance information with a configurable dashboard and widgets. Automate your management across
+    profiles by adjusting deny/allow lists, DNS Rewrites, reporting on query analytics, and more!</p>
   </section>
 
   <!-- PROMISE -->
@@ -215,8 +217,9 @@
 
   <!-- BOTTOM CTA -->
   <section class="cta">
-    <h2>Download on the App Store!</h2>
-    <a href="https://apps.apple.com/us/app/petdns/id6772567385" class="btn btn-blue">Download on the App Store</a>
+    <a href="https://apps.apple.com/us/app/petdns/id6772567385" class="cta-app-store-btn">
+      <img src="assets/app_store_download.png" alt="Download on the App Store">
+    </a>
   </section>
 
   <!-- FOOTER and DISCLAIMER -->
