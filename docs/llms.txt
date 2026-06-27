@@ -1,12 +1,13 @@
 # PetDNS
 
-> PetDNS is a native iOS app for managing NextDNS profiles. It is a third-party client and is not affiliated with or endorsed by NextDNS.
+> PetDNS is a fully native iOS app that gives users complete control over their NextDNS profiles directly from their iPhone or iPad. It is an independent third-party client and is not affiliated with or endorsed by NextDNS.
 
-PetDNS provides a fully native iPhone and iPad interface for NextDNS, a DNS-based filtering service that blocks advertisements, trackers, and threats. The app allows users to view DNS query logs, manage allow and denylists, and adjust advanced profile settings entirely from their device.
+The app provides a native interface to NextDNS, a DNS-based filtering service that blocks advertisements, trackers, and threats. Users can perform deep DNS log searches with extensive filtering, update allowlists and denylists, view detailed query analytics, and manage all profile settings—including advanced configurations—entirely from their device. A customizable dashboard and dynamic widgets provide at-a-glance network status.
 
-PetDNS is free to use for all features available on the NextDNS website. A paid subscription unlocks features that go beyond the website: multi-profile views, cross-profile log search, and automation via Siri and the iOS Shortcuts app.
+PetDNS Pro unlocks advanced multi-profile management: users can search and compare logs across all profiles simultaneously, update allow and denylists on every profile with a single tap, view combined cross-profile analytics, and build custom automation workflows using Siri and the iOS Shortcuts app. Aggregated profile data is also available in the dashboard and widgets.
 
-The app stores the user's NextDNS API key exclusively on-device using Apple's secure storage. No personal data is collected, transmitted, or stored by the app's developer. All NextDNS account data is fetched directly from the NextDNS API on the user's device.
+The app stores the user's NextDNS API key exclusively on-device using Apple's secure storage. No personal data is collected, transmitted, or stored by the developer. All account data and profile configurations are fetched directly from the NextDNS API on the user's device.
+ed, transmitted, or stored by the app's developer. All NextDNS account data is fetched directly from the NextDNS API on the user's device.
 
 ## Pages
 
