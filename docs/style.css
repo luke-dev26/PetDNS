@@ -120,13 +120,13 @@ nav.nav-open .nav-toggle span:nth-child(3) {
         flex-direction: column;
         gap: 0;
         padding: 0.75rem 0 0.25rem;
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         margin-top: 0.75rem;
     }
 
     .nav-links a {
         padding: 0.6rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .nav-links a:last-child {
@@ -136,6 +136,175 @@ nav.nav-open .nav-toggle span:nth-child(3) {
     nav.nav-open .nav-links {
         display: flex;
     }
+}
+
+body {
+    background: #f5f8ff;
+    color: var(--body-text);
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.feature-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-box {
+    background: var(--white);
+    border: 1px solid rgba(11, 21, 41, 0.06);
+    border-radius: 18px;
+    padding: 1.2rem 1.1rem;
+    box-shadow: 0 12px 28px rgba(11, 21, 41, 0.04);
+}
+
+.feature-box strong {
+    display: block;
+    color: var(--blue);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+.feature-box p {
+    margin: 0;
+    color: var(--body-text);
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+.shortcut-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.shortcut-card {
+    background: var(--white);
+    border: 1px solid rgba(11, 21, 41, 0.07);
+    border-radius: 20px;
+    padding: 1.25rem 1.2rem;
+    box-shadow: 0 14px 30px rgba(11, 21, 41, 0.03);
+}
+
+.shortcut-card h3 {
+    margin: 0 0 0.7rem;
+    font-size: 1.12rem;
+    color: var(--dark);
+}
+
+.shortcut-card h3 a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.shortcut-card p {
+    margin: 0;
+    color: var(--body-text);
+    line-height: 1.75;
+    font-size: 0.98rem;
+}
+
+.shortcut-note {
+    margin-top: 2.25rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+.page-shell,
+.support-shell,
+.privacy-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+}
+
+.page-hero,
+.support-hero,
+.privacy-hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #0553c7 52%, #0b1529 100%);
+    border-radius: 28px;
+    box-shadow: 0 22px 50px rgba(11, 21, 41, 0.12);
+    color: var(--white);
+}
+
+.page-hero {
+    padding: 2.25rem 2rem;
+}
+
+.page-hero h1,
+.support-hero h1,
+.privacy-hero h1 {
+    letter-spacing: -0.05em;
+    line-height: 1.12;
+    margin-bottom: 0.8rem;
+}
+
+.page-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.support-hero,
+.privacy-hero {
+    padding: 2.1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.support-hero h1,
+.privacy-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.page-hero p,
+.support-hero p,
+.privacy-hero p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 760px;
+    margin: 0;
+}
+
+.content-card {
+    background: var(--white);
+    border: 1px solid rgba(11, 21, 41, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(11, 21, 41, 0.04);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.content-grid .content-card {
+    padding: 1.25rem 1.2rem;
+}
+
+.content-grid strong {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+}
+
+.content-grid p {
+    margin: 0;
+    color: var(--body-text);
+    line-height: 1.75;
+    font-size: 0.98rem;
 }
 
 footer {
@@ -150,7 +319,17 @@ footer a {
     color: var(--white);
 }
 
-main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 2rem; }
+@media (max-width: 900px) {
+
+    .content-grid,
+    .feature-strip,
+    .shortcut-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-visual {
+        display: none !important;
+    }
+}
