@@ -6,68 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iOS Shortcuts — PetDNS</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Ready-made Siri and iOS Shortcuts for PetDNS. Add domains to your NextDNS blocklist from Safari, check your NextDNS connection, and get AI-powered profile overviews with Apple Intelligence.">
+  <meta name="description" content="Power-user Siri and iOS Shortcuts for PetDNS. Add domains from Safari, inspect your connection, update linked IPs, and bulk-manage allowlist and denylist entries.">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="iOS Shortcuts — PetDNS">
-  <meta property="og:description" content="Ready-made Siri and iOS Shortcuts for PetDNS. Add domains to your NextDNS blocklist from Safari, check your connection, and more.">
+  <meta property="og:description" content="Power-user Siri and iOS Shortcuts for PetDNS. Add domains from Safari, inspect your connection, update linked IPs, and automate profile workflows.">
   <meta property="og:url" content="https://luke-dev26.github.io/PetDNS/shortcuts.html">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .shortcuts {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
-    }
-    .shortcuts h1 {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-      color: var(--dark);
-    }
-    .shortcuts .intro {
-      font-size: 1rem;
-      line-height: 1.75;
-      margin-bottom: 2.5rem;
-      color: var(--body-text);
-    }
-    .shortcuts .intro a {
-      color: var(--blue);
-    }
-    .shortcut-list hr {
-      border: none;
-      border-top: 1px solid #e2e8f0;
-      margin: 2rem 0;
-    }
-    .shortcut-list h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    .shortcut-list h3 a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-    .shortcut-list h3 a:hover {
-      color: var(--blue-hover);
-      text-decoration: underline;
-    }
-    .shortcut-list p {
-      font-size: 1rem;
-      line-height: 1.75;
-      color: var(--body-text);
-    }
-    .coming-soon {
-      margin-top: 3rem;
-      font-size: 0.95rem;
-      font-style: italic;
-      color: #64748b;
-    }
-  </style>
 </head>
 
 <body>
@@ -89,43 +37,69 @@
     </div>
   </nav>
 
-  <main class="shortcuts">
-    <h1>Siri and Shortcuts</h1>
-    <p class="intro">The following shortcuts are examples of how to use PetDNS with Siri and the Shortcuts app. These shortcuts are designed to be quickly added to your library and ready for use immediately. Tap any title below to add the shortcut directly to your library.</p>
-    <p>Have a shortcut request or want to see your own shortcut shown here? <a href="support.html" target="_blank">Contact me</a> to share your idea!</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <h1>iOS Shortcuts built for profile control and fast action.</h1>
+      <p>PetDNS shortcuts are designed for users who want to move faster: add domains from Safari, inspect connection state, update linked IP values, and bulk-manage allowlist and denylist changes without leaving the iOS workflow.</p>
+    </section>
 
-    <div class="shortcut-list">
+    <section class="section" style="margin-top:2rem;">
+      <div class="feature-strip">
+        <div class="feature-box">
+          <strong>Workflow</strong>
+          <p>Trigger actions from Safari, Siri, or your own custom automation flows without needing a full browser session.</p>
+        </div>
+        <div class="feature-box">
+          <strong>Control</strong>
+          <p>Change profile behavior from quick actions, not just from dashboards — useful for managed profiles, troubleshooting, and rapid policy updates.</p>
+        </div>
+        <div class="feature-box">
+          <strong>Automation</strong>
+          <p>Use Apple’s Shortcuts ecosystem to connect the app into broader iPhone workflows, device checks, and operational tasks.</p>
+        </div>
+      </div>
+    </section>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/cccab0a0c5a54550a0c6c70eb7d52e2b">Deny/Allow Domain from Browser</a></h3>
-      <p>A shortcut that appears in the iOS Share Sheet in Safari that will add the domain of the currently open website to the allowlist or denylist for a selected profile.</p>
+    <section class="section" style="margin-top:2rem;">
+      <div class="shortcut-grid">
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/cccab0a0c5a54550a0c6c70eb7d52e2b">Deny/Allow Domain from Browser</a></h3>
+          <p>Add the current page domain to the selected profile’s allowlist or denylist directly from Safari and the iOS Share Sheet. Useful for fast exception handling and targeted filtering.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/4d41e994f96a41df824b99202575baa9">Check NextDNS Connection</a></h3>
-      <p>Tests your connection to NextDNS and shows what profile the device is using. Can be used inside other Shortcuts to take action based on the result.</p>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/4d41e994f96a41df824b99202575baa9">Check NextDNS Connection</a></h3>
+          <p>Validate your current NextDNS connection and confirm which profile is active. Designed for troubleshooting and use as a reusable step inside larger automations.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/3771af32c2354adab01809ac71886cb6">AI Overview of Profile (iOS 26)</a></h3>
-      <p>A shortcut that uses Apple's Private Cloud Compute to provide a natural-language overview of the profile's settings. Requires a device compatible with Apple Intelligence.</p>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/3771af32c2354adab01809ac71886cb6">AI Overview of Profile</a></h3>
+          <p>Generate a natural-language summary of the current profile configuration using Apple Intelligence. Ideal for fast review and quick understanding of complex profile state.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/c92e2bb4e72447e7971aaaad5de10888">AI Recommendations for Profile (iOS 26)</a></h3>
-      <p>A shortcut that uses Apple's Private Cloud Compute to provide a natural-language list of recommendations for your profile. Requires a device compatible with Apple Intelligence.</p>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/c92e2bb4e72447e7971aaaad5de10888">AI Recommendations for Profile</a></h3>
+          <p>Use Apple Intelligence to generate recommendations based on the profile’s current settings. Helpful for reviewing configuration intent and exploring optimization ideas.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/8bcabc1b322e401a8f8ff40e07eb96ff">Update your Profile's Linked IP</a></h3>
-      <p>A shortcut that allows you to automate changing your Profile's Linked IP address. When setting up the Shortcut, you will be prompted to enter your Profile ID and Update Token. These can be found inside the PetDNS app by navigating to the Profile tab, then scrolling down to "Setup on your Devices". The Profile ID will be at the top and the Update Token will be towards the bottom.</p>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/8bcabc1b322e401a8f8ff40e07eb96ff">Update Profile Linked IP</a></h3>
+          <p>Automate updates to a profile’s linked IP address with a prompt for the profile ID and update token. Useful for managed or dynamic networking situations.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/441e461bf70d45858bcca9321e02d627">Bulk Domain Import - Import Domains to Deny/Allow List</a></h3>
-      <p>This shortcut imports a list of domains from a text file (.TXT) to either the deny or allow list for a selected profile. If you do not have an easy way to create a text file, you can use the "Create Domain Import TXT File" shortcut to create one. Requires PetDNS Pro.</p>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/441e461bf70d45858bcca9321e02d627">Bulk Domain Import</a></h3>
+          <p>Import a domain list from a text file into either the allowlist or denylist for a selected profile. Designed for larger-scale housekeeping and repeatable blocklist management.</p>
+        </article>
 
-      <hr>
-      <h3><a href="https://www.icloud.com/shortcuts/2463c5ef8dff4888900ced4f4c0ae485">Create Domain Import TXT File</a></h3>
-      <p>This shortcut helps you create a text file containing a list of domains that can be used with the "Bulk Domain Import" shortcut. To create the file, edit the shortcut and enter the domains you want to import, then run the shortcut.</p>
-    </div>
+        <article class="shortcut-card">
+          <h3><a href="https://www.icloud.com/shortcuts/2463c5ef8dff4888900ced4f4c0ae485">Create Domain Import TXT File</a></h3>
+          <p>Generate a domain list in a format ready for import. This gives you a repeatable path for curating lists before bulk import into your configured profile.</p>
+        </article>
+      </div>
 
-    <p class="coming-soon">More shortcuts coming soon!</p>
+      <p class="shortcut-note">More shortcuts are planned as the app grows and the automation surface expands.</p>
+    </section>
   </main>
 
   <footer>

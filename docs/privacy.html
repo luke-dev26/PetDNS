@@ -6,47 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — PetDNS</title>
 
-  <!-- SEO -->
-  <meta name="description" content="PetDNS privacy policy. PetDNS does not collect or transmit any personal data. Your NextDNS API key is stored only on your device using Apple's secure storage.">
+  <meta name="description" content="PetDNS privacy policy. The app does not collect or transmit personal data, and your NextDNS API key is stored only on your device using secure on-device storage.">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Privacy Policy — PetDNS">
-  <meta property="og:description" content="PetDNS does not collect or transmit any personal data. Your NextDNS API key is stored only on your device using Apple's secure storage.">
+  <meta property="og:description" content="PetDNS does not collect or transmit personal data. Your NextDNS API key is stored only on your device using secure on-device storage.">
   <meta property="og:url" content="https://luke-dev26.github.io/PetDNS/privacy.html">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .privacy {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
-    }
-    .privacy h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
-      color: var(--dark);
-    }
-    .privacy .updated {
-      font-size: 0.875rem;
-      color: #64748b;
-      margin-bottom: 2.5rem;
-    }
-    .privacy h2 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-      color: var(--dark);
-    }
-    .privacy p {
-      font-size: 1rem;
-      line-height: 1.75;
-      margin-bottom: 0.5rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -68,32 +37,38 @@
     </div>
   </nav>
 
-  <main class="privacy">
-    <h1>Privacy Policy for PetDNS</h1>
-    <p class="updated">Last updated: May 9, 2026</p>
+  <main class="privacy-shell">
+    <section class="privacy-hero">
+      <h1>Privacy Policy</h1>
+      <p>PetDNS is designed around user privacy and device-local control.</p>
+    </section>
 
-    <p>PetDNS ("the App") is committed to protecting your privacy. This policy describes how the App handles information required for its operation.</p>
+    <section class="content-card" style="padding:1.5rem 1.3rem;">
+      <div class="updated" style="font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.2rem;">Last updated: May 9, 2026</div>
 
-    <h2>Data Collection</h2>
-    <p>PetDNS does not collect, transmit, or store any personal data. The App does not include analytics libraries, advertising SDKs, or any third-party services that have access to your information.</p>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">PetDNS (“the App”) is committed to protecting your privacy. This policy describes how the App handles information required for its operation.</p>
 
-    <h2>API Key Storage</h2>
-    <p>To use PetDNS, you provide your NextDNS API key. This key is stored exclusively on your device using Apple's standard on-device secure storage. It is never transmitted to any server operated by the App's developer.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">Data collection</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">PetDNS does not collect, transmit, or store personal data from your device. The App does not include advertising SDKs, analytics libraries, or other third-party services that receive user information.</p>
 
-    <h2>Data Displayed in the App</h2>
-    <p>PetDNS connects directly to the NextDNS API from your device to download and display your NextDNS account data (such as query logs and settings). This data is fetched on demand and is not stored by the App's developer. The App's developer has no visibility into your NextDNS account data.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">API key storage</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">To use PetDNS, you provide your NextDNS API key. This key is stored only on your device using Apple’s secure on-device storage. It is not transmitted to any server controlled by the app developer.</p>
 
-    <h2>NextDNS</h2>
-    <p>PetDNS is a third-party application and is not affiliated with or endorsed by NextDNS. For information about how NextDNS handles your data, please review the <a href="https://nextdns.io/privacy" target="_blank">NextDNS Privacy Policy</a>.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">Data displayed in the app</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">PetDNS connects directly to the NextDNS API from your device to fetch and display account data such as logs and settings. That data is retrieved on demand and remains under your control. The app developer does not receive or store your NextDNS account data.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>The App does not knowingly collect information from anyone, including children under the age of 13.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">NextDNS</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">PetDNS is a third-party application and is not affiliated with or endorsed by NextDNS. For information about how NextDNS handles your data, please review the <a href="https://nextdns.io/privacy" target="_blank">NextDNS Privacy Policy</a>.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>If this policy changes, the updated version will be posted at this URL with a revised "Last updated" date.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">Children’s privacy</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">The App does not knowingly collect information from anyone, including children under the age of 13.</p>
 
-    <h2>Contact</h2>
-    <p>Questions about this policy? <a href="https://github.com/luke-dev26/PetDNS/issues" target="_blank">Open an issue on GitHub</a>.</p>
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">Changes to this policy</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">If this policy changes, the updated version will be posted at this URL with a revised “Last updated” date.</p>
+
+      <h2 style="font-size:1.2rem; color: var(--dark); margin:1.5rem 0 0.6rem;">Contact</h2>
+      <p style="margin: 0 0 0.8rem; line-height: 1.8; color: var(--body-text);">Questions about this policy? <a href="https://github.com/luke-dev26/PetDNS/issues" target="_blank">Open an issue on GitHub</a>.</p>
+    </section>
   </main>
 
   <footer>
